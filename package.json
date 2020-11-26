@@ -1,0 +1,29 @@
+{
+  "name": "polyfill-middleware-example",
+  "version": "0.0.0",
+  "description": "Provides an Express middleware that returns a string <script> tag that can be used to load a polyfill hosted externally",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=12.10.0",
+    "npm": ">=6.10.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "jest --watch",
+    "lint": "eslint . --ignore-path .gitignore --ext .js,.jsx",
+    "build-regex": "node scripts/build-user-agents-not-needing-polyfill-support-regex.js > lib/user-agents-regex.js",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "browserslist-useragent-regexp": "^2.1.1",
+    "eslint-config-skyscanner": "^8.1.0",
+    "react-scripts": "^4.0.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ]
+  }
+}
