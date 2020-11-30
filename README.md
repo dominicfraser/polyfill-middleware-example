@@ -4,7 +4,7 @@ This is an example of an Express middleware that can be used to dynamically add 
 
 It goes along with this blog post: xxx
 
-It is an adaptation of a private repository, and is used only for example purposes. The original package this example is based on was developed by [Mungo Dewar](https://github.com/DewarM) and [Tat Jhetson](???).
+It is an adaptation of a private repository, and is used only for example purposes. The original package this example is based on was developed by [Mungo Dewar](https://github.com/DewarM) and [Tat Jhetson](https://github.com/tat-ss).
 
 ## Usage
 
